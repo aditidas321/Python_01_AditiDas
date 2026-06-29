@@ -1,0 +1,32 @@
+from datetime import datetime
+
+print("Name: Aditi Das")
+print("College: Kristu Jayanti College")
+print("Branch: MCA")
+print("Internship: Cyber Security Summer Internship")
+print("Date & Time:", datetime.now().strftime("%Y-%m-%d %H:%M:%S"))name = input("Enter your name: ")
+age = input("Enter your age: ")
+technology = input("Enter your favorite technology: ")
+
+print("\n----- Summary -----")
+print("Hello", name + "!")
+print("You are", age, "years old.")
+print("Your favorite technology is", technology + ".")num1 = float(input("Enter First Number: "))
+num2 = float(input("Enter Second Number: "))
+
+print("Addition:", num1 + num2)
+print("Subtraction:", num1 - num2)
+print("Multiplication:", num1 * num2)
+
+if num2 != 0:
+    print("Division:", num1 / num2)
+else:
+    print("Division: Cannot divide by zero")import os
+import platform
+import sys
+
+print("Operating System:", platform.system())
+print("Current Username:", os.getlogin())
+print("Current Working Directory:", os.getcwd())
+print("Python Version:", sys.version)import getpass
+print("Current Username:", getpass.getuser())
